@@ -61,6 +61,9 @@ resource "aws_elasticsearch_domain" "es" {
     dedicated_master_enabled = var.dedicated_master
     dedicated_master_type    = var.mtype
     dedicated_master_count   = var.mcount
+    warm_enabled             = var.ultrawarm
+    warm_type                = var.wtype
+    warm_count               = var.wcount
     zone_awareness_enabled   = var.zone_awareness
     zone_awareness_config {
       availability_zone_count = length(var.subnet_ids) > 2 ? 3 : 2

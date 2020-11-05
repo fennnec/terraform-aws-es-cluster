@@ -104,6 +104,24 @@ variable "mtype" {
   type        = string
 }
 
+variable "ultrawarm" {
+  default     = false
+  description = "Indicates whether our cluster have ultrawarm nodes enabled."
+  type        = bool
+}
+
+variable "wcount" {
+  default     = 0
+  description = "Elastic Search Service cluster ultrawarm Ec2 instance number."
+  type        = number
+}
+
+variable "wtype" {
+  default     = ""
+  type        = string
+  description = "Elastic Search Service cluster ultrawarm Ec2 instance type."
+}
+
 variable "zone_awareness" {
   default     = false
   description = "Indicates whether zone awareness is enabled."
