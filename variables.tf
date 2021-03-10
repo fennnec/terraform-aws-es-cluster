@@ -21,7 +21,7 @@ variable "create_iam_service_linked_role" {
 }
 
 variable "zone_id" {
-  default     = ""
+  default = null
   description = "Route 53 zone id where the DNS record will be created."
   type        = string
 }
