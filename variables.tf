@@ -117,8 +117,8 @@ variable "wcount" {
 }
 
 variable "wtype" {
-  default     = ""
-  type        = string
+  default = "ultrawarm1.medium.elasticsearch"
+  type = string
   description = "Elastic Search Service cluster ultrawarm Ec2 instance type."
 }
 
